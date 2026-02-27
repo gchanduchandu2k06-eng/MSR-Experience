@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSR Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            align-items: center;
+            height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+        }
+
+        h1 {
+            letter-spacing: 10px;
+            margin-bottom: 50px;
+            font-weight: 300;
+            color: white;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .portal-btn {
+            padding: 18px 40px;
+            font-size: 16px;
+            background: transparent;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 3px;
+            transition: 0.4s;
+            text-transform: uppercase;
+            width: 300px;
+        }
+
+        #exp-btn {
+            color: white;
+            border: 1px solid white;
+        }
+
+        #exp-btn:hover {
+            background: white;
+            color: black;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        #lib-btn {
+            color: cyan;
+            border: 1px solid cyan;
+        }
+
+        #lib-btn:hover {
+            background: cyan;
+            color: black;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+        }
+
+        /* Ambient background effect */
+        .bg-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="container">
+        <h1>MSR</h1>
+        <div class="btn-group">
+            <button id="exp-btn" class="portal-btn" onclick="location.href='intro.html'">Enter Experience</button>
+            <button id="lib-btn" class="portal-btn" onclick="location.href='library.html'">Academic Library</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MSR Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; background: black; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; font-family: 'Montserrat'; color: white; overflow: hidden; }
+        #button-container { display: flex; flex-direction: column; gap: 20px; z-index: 100; text-align: center; }
+        .main-btn { padding: 18px 45px; font-size: 16px; background: transparent; cursor: pointer; letter-spacing: 3px; transition: 0.4s; text-transform: uppercase; border-radius: 5px; }
+        #start-btn { color: white; border: 1px solid white; }
+        #start-btn:hover { background: white; color: black; }
+        #library-btn { color: cyan; border: 1px solid cyan; }
+        #library-btn:hover { background: cyan; color: black; box-shadow: 0 0 20px cyan; }
+    </style>
+</head>
+<body>
+
+<div id="button-container">
+    <button id="start-btn" class="main-btn">Enter MSR Experience</button>
+    <button id="library-btn" class="main-btn" onclick="location.href='library.html'">Academic Library (4th Sem)</button>
+</div>
+
+<script>
+    const startBtn = document.getElementById("start-btn");
+    // Place your original cinematic JavaScript logic here if you want it to run on this page
+    startBtn.addEventListener('click', () => {
+        document.getElementById("button-container").style.display = 'none';
+        // Your existing MSR animation code...
+    });
+</script>
+</body>
+</html>

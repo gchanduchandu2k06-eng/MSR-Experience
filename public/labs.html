@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labs & Practical Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body { background: black; color: white; font-family: 'Montserrat'; text-align: center; padding: 50px; margin: 0; }
+        h1 { color: cyan; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+        .sub-code { color: #555; font-size: 14px; letter-spacing: 1px; margin-bottom: 10px; display: block; }
+        .prof { color: #888; font-style: italic; margin-bottom: 40px; }
+        
+        .lab-container { 
+            display: flex; 
+            justify-content: center; 
+            gap: 40px; 
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .lab-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #222;
+            padding: 30px;
+            width: 350px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .lab-card:hover { border-color: cyan; transform: translateY(-5px); }
+        .lab-card h2 { font-size: 18px; color: cyan; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+
+        .btn-list { display: flex; flex-direction: column; gap: 15px; }
+        .res-btn { 
+            padding: 15px; 
+            border: 1px solid #444; 
+            color: white; 
+            text-decoration: none; 
+            font-size: 13px;
+            font-weight: bold; 
+            border-radius: 4px; 
+            transition: 0.3s; 
+        }
+        .res-btn:hover { background: cyan; color: black; border-color: cyan; }
+
+        .back { margin-top: 60px; display: inline-block; color: cyan; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }
+        .back:hover { border-bottom-color: cyan; }
+    </style>
+</head>
+<body>
+    <h1>Practical Labs</h1>
+    <p class="prof">Department of Computer Science & Engineering</p>
+    
+    <div class="lab-container">
+        <div class="lab-card">
+            <span class="sub-code">BCSL404</span>
+            <h2>Analysis & Design of Algorithms</h2>
+            <div class="btn-list">
+                <a href="https://drive.google.com/drive/folders/1ZqcHYA_UqVB9k1ugTlXIKk-oYwbjjq_N" target="_blank" class="res-btn">ADA Lab Manual</a>
+                <a href="#" target="_blank" class="res-btn">Sample Programs</a>
+                <a href="#" target="_blank" class="res-btn">Viva Questions</a>
+            </div>
+        </div>
+
+        <div class="lab-card">
+            <span class="sub-code">BCS456D</span>
+            <h2>Latex Lab</h2>
+            <div class="btn-list">
+                <a href="https://drive.google.com/drive/folders/1ZqcHYA_UqVB9k1ugTlXIKk-oYwbjjq_N" target="_blank" class="res-btn">Latex Documentation</a>
+                <a href="#" target="_blank" class="res-btn">Report Templates</a>
+                <a href="#" target="_blank" class="res-btn">Practice Exercises</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="library.html" class="back">← BACK TO SUBJECT LIST</a>
+</body>
+</html>

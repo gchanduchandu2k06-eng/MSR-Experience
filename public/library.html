@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIT CSE Resource Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background: black; 
+            color: white; 
+            font-family: 'Montserrat', sans-serif; 
+            padding: 40px 20px; 
+            text-align: center; 
+            margin: 0;
+        }
+
+        h1 { 
+            color: cyan; 
+            letter-spacing: 5px; 
+            text-transform: uppercase; 
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        p.subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card { 
+            background: rgba(255, 255, 255, 0.03); 
+            border: 1px solid #222; 
+            padding: 25px; 
+            cursor: pointer; 
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+            border-radius: 8px; 
+            text-align: left; 
+        }
+
+        .card:hover { 
+            border-color: cyan; 
+            background: rgba(0, 255, 255, 0.05);
+            transform: translateY(-8px); 
+            box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1); 
+        }
+
+        .sub-code { color: cyan; font-size: 11px; font-weight: bold; letter-spacing: 1px; }
+        .sub-name { font-size: 18px; display: block; margin: 8px 0; font-weight: 700; color: #fff; }
+        .sub-prof { color: #888; font-size: 14px; font-style: italic; }
+
+        .back-home { 
+            margin-top: 60px; 
+            display: inline-block; 
+            color: #555; 
+            text-decoration: none; 
+            border: 1px solid #333; 
+            padding: 12px 25px; 
+            transition: 0.3s; 
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .back-home:hover { 
+            color: white; 
+            border-color: white; 
+            background: rgba(255,255,255,0.05);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ACADEMIC REPOSITORY</h1>
+    <p class="subtitle">SKIT BENGALURU | 4TH SEMESTER CSE</p>
+
+    <div class="grid">
+        <div class="card" onclick="location.href='ada.html'">
+            <span class="sub-code">BCS401</span>
+            <span class="sub-name">Analysis & Design of Algorithms (ADA)</span>
+            <span class="sub-prof">Prof: Mrs. Shweta Bagali</span>
+        </div>
+
+        <div class="card" onclick="location.href='mc.html'">
+            <span class="sub-code">BCS402</span>
+            <span class="sub-name">Microcontrollers</span>
+            <span class="sub-prof">Prof: Mrs. Aruna R</span>
+        </div>
+
+        <div class="card" onclick="location.href='dbms.html'">
+            <span class="sub-code">BCS403</span>
+            <span class="sub-name">Database Management Systems</span>
+            <span class="sub-prof">Prof: Mrs. Soumya CV</span>
+        </div>
+
+        <div class="card" onclick="location.href='bcs405a.html'">
+            <span class="sub-code">BCS405A</span>
+            <span class="sub-name">Discrete Mathematical Structures</span>
+            <span class="sub-prof">Prof: Ms. Thanuja</span>
+        </div>
+
+        <div class="card" onclick="location.href='bboc407.html'">
+            <span class="sub-code">BBOC407</span>
+            <span class="sub-name">Biology For Computer Engineers</span>
+            <span class="sub-prof">Prof: Mrs. Shweta Singh</span>
+        </div>
+
+        <div class="card" onclick="location.href='buhk408.html'">
+            <span class="sub-code">BUHK408</span>
+            <span class="sub-name">Universal Human Values</span>
+            <span class="sub-prof">Prof: Mrs. Latha A</span>
+        </div>
+
+        <div class="card" onclick="location.href='labs.html'">
+            <span class="sub-code">BCSL404 / BCS456D</span>
+            <span class="sub-name">DAA Lab & Latex Lab</span>
+            <span class="sub-prof">SB/IUK / Dr. Hemalatha KL</span>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-home">← BACK TO MAIN OPTIONS</a>
+
+</body>
+</html>
